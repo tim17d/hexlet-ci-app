@@ -9,7 +9,7 @@ jobs:
         with:
           cache: 'npm'
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@v3
+        uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - run: make setup
